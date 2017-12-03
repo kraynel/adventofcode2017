@@ -1,0 +1,13 @@
+{
+  "name": "advent2017",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "kraynel <kraynel@yahoo.fr>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^21.2.1"
+  }
+}
