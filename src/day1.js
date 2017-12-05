@@ -8,6 +8,17 @@ const getHash = input => {
   }, 0);
 };
 
+const getHash2 = input => {
+  const inputArray = input.split("");
+  const jump = inputArray.length / 2;
+  return inputArray.reduce((accu, value, index) => {
+    const nextIndex = (index + jump) % inputArray.length;
+    if (value === inputArray[nextIndex]) return parseInt(value) + accu;
+    return accu;
+  }, 0);
+};
+
 module.exports = {
-  getHash
+  getHash,
+  getHash2
 };

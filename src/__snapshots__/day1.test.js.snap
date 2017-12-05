@@ -1,3 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`getHash should give the answer 1`] = `1031`;
+
+exports[`getHash2 should give the answer 1`] = `1080`;
