@@ -1,3 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`getNumberOfSteps should log the correct value 1`] = `355965`;
+
+exports[`getNumberOfSteps2 should log the correct value 1`] = `26948068`;
