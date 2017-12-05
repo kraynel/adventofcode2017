@@ -1,7 +1,7 @@
 const _ = require("lodash");
 
 const getChecksumByRow = row => {
-  const inputArray = row.split(" ").map(a => parseInt(a));
+  const inputArray = row.split(/\s/).map(a => parseInt(a));
   return _.max(inputArray) - _.min(inputArray);
 };
 

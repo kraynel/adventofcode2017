@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`countPassphrase should log the correct value 1`] = `466`;
+
+exports[`countPassphrase2 should log the correct value 1`] = `251`;
