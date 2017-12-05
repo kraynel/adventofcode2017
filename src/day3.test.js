@@ -21,3 +21,5 @@ describe("getDistance", () => {
     expect(getDistance(289326)).toMatchSnapshot();
   });
 });
+
+// For part 2, see https://oeis.org/A141481 and https://oeis.org/A141481/b141481.txt
