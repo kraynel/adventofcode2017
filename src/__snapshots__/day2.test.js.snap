@@ -1,3 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`getChecksum should print the answer 1`] = `44670`;
+
+exports[`getChecksum2 should print the answer 1`] = `285`;
