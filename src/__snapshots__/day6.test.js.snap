@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getCycleLength should return the correct number of cycles 1`] = `1695`;
+
+exports[`getCycleNumbers should return the correct number of cycles 1`] = `7864`;
