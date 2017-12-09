@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`largestRegister should get the value 1`] = `5102`;
+
+exports[`largestRegister should get the value 2`] = `6056`;
