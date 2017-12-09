@@ -1,3 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`balanceTree should get the value 1`] = `1206`;
+
 exports[`getRootNode should get the value 1`] = `"airlri"`;
