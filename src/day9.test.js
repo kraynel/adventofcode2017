@@ -1,4 +1,9 @@
-const { removeEscapes, removeGarbage, scoreGroups } = require("./day9");
+const {
+  removeEscapes,
+  removeGarbage,
+  scoreGroups,
+  countGarbage
+} = require("./day9");
 const fs = require("fs");
 
 describe("removeEscapes", () => {
@@ -44,6 +49,26 @@ describe("scoreGroups", () => {
   it("should get the value", done => {
     fs.readFile("inputs/day9.txt", "utf8", (err, data) => {
       expect(scoreGroups(data)).toMatchSnapshot();
+      done();
+    });
+  });
+});
+
+describe("countGarbage", () => {
+  it("should count the garbage", () => {
+    expect(countGarbage("<>")).toBe(0);
+    expect(countGarbage("<random characters>")).toBe(17);
+    expect(countGarbage("<<<<>")).toBe(3);
+    expect(countGarbage("<{!>}>")).toBe(2);
+    expect(countGarbage("<!!>")).toBe(0);
+    expect(countGarbage("<!!!>>")).toBe(0);
+    expect(countGarbage('<{o"i!a,<{i<a>')).toBe(10);
+    expect(countGarbage('<{o"i!a,<{i<a><{!>}>')).toBe(12);
+  });
+
+  it("should get garbage length", done => {
+    fs.readFile("inputs/day9.txt", "utf8", (err, data) => {
+      expect(countGarbage(data)).toMatchSnapshot();
       done();
     });
   });

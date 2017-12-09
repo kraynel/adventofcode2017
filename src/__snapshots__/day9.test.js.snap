@@ -1,3 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`countGarbage should get garbage length 1`] = `6622`;
+
 exports[`scoreGroups should get the value 1`] = `14204`;

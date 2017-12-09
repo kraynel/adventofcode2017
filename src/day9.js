@@ -7,7 +7,7 @@ const removeGarbage = input => {
 };
 
 const scoreGroups = input => {
-  let cleanInput = removeGarbage(input).replace(/,/g, "");
+  const cleanInput = removeGarbage(input).replace(/,/g, "");
 
   let opened = 0;
   let count = 0;
@@ -22,8 +22,21 @@ const scoreGroups = input => {
   return count;
 };
 
+const countGarbage = input => {
+  const cleanInput = removeEscapes(input);
+  const garbageCapture = /<(.*?)>/g;
+  let garbage = garbageCapture.exec(cleanInput);
+  let count = 0;
+  while (garbage != null) {
+    count += garbage[1].length;
+    garbage = garbageCapture.exec(cleanInput);
+  }
+
+  return count;
+};
 module.exports = {
   removeEscapes,
   removeGarbage,
-  scoreGroups
+  scoreGroups,
+  countGarbage
 };
