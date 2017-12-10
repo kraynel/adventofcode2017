@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`computeFullHash should get the value 1`] = `"44f4befb0f303c0bafd085f97741d51d"`;
+
+exports[`computeHash should get the value 1`] = `5577`;
