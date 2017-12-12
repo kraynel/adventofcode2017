@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`countSteps should get the value 1`] = `
+Object {
+  "n": 1330,
+  "ne": 1049,
+  "nw": 1339,
+  "s": 1697,
+  "se": 1330,
+  "sw": 1478,
+}
+`;
+
+exports[`countSteps should get the value 2`] = `
+Object {
+  "n": 0,
+  "ne": 0,
+  "nw": 9,
+  "s": 367,
+  "se": 0,
+  "sw": 429,
+}
+`;
+
+exports[`countSteps should get the value 3`] = `796`;
+
+exports[`countSteps should get the value 4`] = `1585`;
