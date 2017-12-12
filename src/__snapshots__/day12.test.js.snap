@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`countConnected should get the value 1`] = `145`;
+
+exports[`countGroups should get the value 1`] = `207`;
