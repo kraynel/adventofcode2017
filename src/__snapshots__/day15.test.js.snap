@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getFinalCount should count 1`] = `594`;
+
+exports[`getFinalCount2 should count 2 1`] = `328`;
