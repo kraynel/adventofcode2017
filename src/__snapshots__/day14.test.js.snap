@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`countBits should get the value 1`] = `8292`;
+
+exports[`countIslands should get the value 1`] = `1069`;
