@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`letsDance should get the value 1`] = `"glnacbhedpfjkiom"`;
+
+exports[`letsDance should get the value 2`] = `"fmpanloehgkdcbji"`;
