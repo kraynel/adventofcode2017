@@ -1,3 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`getNextValue should get the value 1`] = `1506`;
+
+exports[`getValueAfterZero should get the value 1`] = `39479736`;

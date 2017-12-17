@@ -15,4 +15,18 @@ const getNextValue = (ringSize, skip) => {
   return ring[(position + 1) % ringSize];
 };
 
-module.exports = { getNextValue };
+const getValueAfterZero = (ringSize, skip) => {
+  let position = 0;
+  let nextValue = 1;
+  let valueAfterZero = 0;
+  while (nextValue < ringSize) {
+    const nextPosition = (position + skip) % nextValue;
+    if (nextPosition === 0) valueAfterZero = nextValue;
+
+    position = nextPosition + 1;
+    nextValue++;
+  }
+  return valueAfterZero;
+};
+
+module.exports = { getNextValue, getValueAfterZero };
