@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getClosestToZero should get the value 1`] = `457`;
+
+exports[`getParticlesAfterCollision should get the value 1`] = `448`;
