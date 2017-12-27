@@ -1,3 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`countEvolved should get the value 1`] = `2512380`;
+
 exports[`countInfectionBurst should get the value 1`] = `5339`;

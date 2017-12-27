@@ -1,4 +1,4 @@
-const { countInfectionBurst } = require("./day22");
+const { countInfectionBurst, countEvolved } = require("./day22");
 const fs = require("fs");
 
 const testMap = `..#
@@ -17,6 +17,19 @@ describe("countInfectionBurst", () => {
   it("should get the value", done => {
     fs.readFile("inputs/day22.txt", "utf8", (err, data) => {
       expect(countInfectionBurst(data, 10000)).toMatchSnapshot();
+      done();
+    });
+  });
+});
+
+describe("countEvolved", () => {
+  it("should countEvolved", () => {
+    expect(countEvolved(testMap, 100)).toBe(26);
+  });
+
+  it("should get the value", done => {
+    fs.readFile("inputs/day22.txt", "utf8", (err, data) => {
+      expect(countEvolved(data, 10000000)).toMatchSnapshot();
       done();
     });
   });
