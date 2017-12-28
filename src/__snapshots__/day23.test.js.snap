@@ -1,3 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`executeProgram should get the debug value 1`] = `3025`;
+
+exports[`executeProgram should get the non debug value 1`] = `915`;

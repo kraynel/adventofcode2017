@@ -47,15 +47,32 @@ const executeProgram = (input, debug = true) => {
         break;
     }
   }
-  console.log(registers);
   return mulCounter;
 };
 
-const isPrime = b => {
-  for (let i = 2, s = Math.sqrt(b); i <= s; i++) {
-    if (b % i === 0) return false;
+var eratosthenes = function(n) {
+  // Eratosthenes algorithm to find all primes under n
+  const upperLimit = Math.sqrt(n);
+  const array = Array(n).fill(true);
+
+  // Remove multiples of primes starting from 2, 3, 5,...
+  for (var i = 2; i <= upperLimit; i++) {
+    if (array[i]) {
+      for (var j = i * i; j < n; j += i) {
+        array[j] = false;
+      }
+    }
   }
-  return b !== 1;
+
+  const output = [];
+  // All array[i] set to true are primes
+  for (var i = 2; i < n; i++) {
+    if (array[i]) {
+      output.push(i);
+    }
+  }
+
+  return output;
 };
 
 const executeSmart = (debug = true) => {
@@ -73,17 +90,16 @@ const executeSmart = (debug = true) => {
     c = 122700;
   }
 
+  const era = eratosthenes(c);
   do {
-    if (!isPrime(b)) {
+    if (!era.includes(b)) {
       h = h + 1;
     }
 
-    if (b != c) b = b + 17;
+    b += 17;
+  } while (b <= c);
 
-    // 1000 times
-  } while (b != c);
-
-  console.log({ a, b, c, d, e, f, g, h });
   return h;
 };
+
 module.exports = { executeProgram, executeSmart };
